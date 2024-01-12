@@ -197,7 +197,7 @@ main {
 .sponsors-title {
     color: var(--Dark-01, #131313);
     font-family: Work Sans;
-    font-size: 45px; 
+    font-size: 45px;
     font-weight: 700;
     margin-bottom: 24px;
 }
@@ -210,12 +210,110 @@ main {
     line-height: 26px;
     margin-bottom: 50px;
 }
-.sponsors-img-container
-{
+
+.sponsors-img-container {
     display: flex;
     justify-content: space-evenly;
 }
 
+.Features-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 130px;
+    margin-bottom: 130px;
+
+}
+
+.features-title {
+    max-width: 468px;
+    color: #131313;
+    font-family: Work Sans;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+    padding-left: 20px;
+    border-left: 5px solid #FF900E;
+    ;
+
+
+}
+
+.features--text {
+    max-width: 586px;
+    color: #727272;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.features-contant .card {
+    border-radius: 8px;
+    background: #FFF;
+    max-width: 586px;
+    max-height: 171px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.features-img img {
+    height: 90%;
+    margin-left: 50px;
+}
+
+.ten-years {
+    max-width: 342px;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 45px;
+    position: relative;
+    bottom: 160px;
+    right: 60px;
+}
+
+.ten-years-title {
+    color: #FFF;
+
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 65px;
+
+    font-weight: 700;
+    line-height: 70px;
+    margin-bottom: 0px;
+}
+
+.ten-years-Experience {
+    color: #FFF;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-top: 0px;
+}
+
+.card-tile {
+    color: #131313;
+    font-family: Work Sans;
+    font-size: 20px;
+
+    font-weight: 600;
+
+}
+
+.card-description {
+    max-width: 514px;
+    color: var(--Dark-03, #727272);
+    font-family: Work Sans;
+    font-size: 16px;
+
+    font-weight: 400;
+    line-height: 26px;
+}
 
 @media screen and (max-width: 576px) {
     header {
@@ -243,10 +341,25 @@ main {
     .facts {
         margin: auto 20px;
     }
-    .sponsors-img-container{
+
+    .sponsors-img-container {
         flex-direction: column;
         gap: 40px;
         margin: auto 30px;
+    }
+
+    .Features-container {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .features-img img {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .ten-years {
+        position: static;
     }
 }
 
@@ -273,14 +386,30 @@ main {
     .facts {
         margin: auto 50px;
     }
-    .sponsors-img-container{
+
+    .sponsors-img-container {
         display: grid;
-        grid-template-columns: repeat(2 , 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 40px;
         margin: auto 50px;
-        
+
     }
-    .sponsors{
+
+    .sponsors {
         margin: auto 50px;
+    }
+
+    .Features-container {
+        flex-direction: column;
+        margin: 50px;
+    }
+
+    .features-img img {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .ten-years {
+        position: static;
     }
 }
